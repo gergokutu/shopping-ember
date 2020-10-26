@@ -9,6 +9,12 @@ export default class CartController extends Controller {
         }, 0);
     }
 
-    tax = 0;
-    total = 0;
+    // define tax & total getters
+    get tax() {
+        return 0.09 * this.subtotal;
+    }
+
+    get total() {
+        return this.subtotal + this.tax;
+    }
 }
