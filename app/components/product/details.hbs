@@ -22,8 +22,11 @@
         <h5>Color</h5>
         {{!-- coming from parent > @color --}}
         <div class="product-colors active-{{ @color }}">
-            <span class="product-color color-red"></span>
-            <span class="product-color color-black"></span>
+            {{!-- use the function helper (fn) to give the color --}}
+            <span class="product-color color-red" {{ on "click" (fn @onChangeColor "red") }}>
+            </span>
+            <span class="product-color color-black" {{ on "click" (fn @onChangeColor "black") }}>
+            </span>
         </div>
     </div>
 </div>
