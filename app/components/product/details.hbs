@@ -20,7 +20,10 @@
 
     <div>
         <h5>Color</h5>
-        <span class="product-color color-red"></span>
-        <span class="product-color color-black"></span>
+        {{!-- coming from parent > @color --}}
+        <div class="product-colors active-{{ @color }}">
+            <span class="product-color color-red"></span>
+            <span class="product-color color-black"></span>
+        </div>
     </div>
 </div>
