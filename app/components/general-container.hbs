@@ -1,1 +1,8 @@
-{{yield}}
+<LinkTo @route="cart" class="cart-link">
+    {{!-- Shorthand > i.fa.fa.shopping-cart --}}
+    <i class="fa fa-shopping-cart"></i>
+</LinkTo>
+
+<main class="container mt-5">
+    {{ yield }}
+</main>
