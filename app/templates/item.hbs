@@ -1,6 +1,6 @@
 <GeneralContainer>
   <div class="product item-details-page">
-    <Product::Image />
+    <Product::Image @src={{ this.productImage }} />
     {{!-- Do not forget @ --}}
     <Product::Details @color={{ this.color }} @onChangeColor={{ this.onChangeColor }} />
   </div>
